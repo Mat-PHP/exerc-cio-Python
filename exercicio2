@@ -1,0 +1,68 @@
+ome= "Mateus"
+contato= "(19) 994864355"
+endereco="Rua 14"
+
+cargo="jovem Aprediz"
+empresa="Robert Bosch"
+periodo="8H por dia "
+
+
+curso= "Analise Deselvolvimento de sistemas"
+Instituição="Unimetrocamp"
+Ano_conclusao="2028"
+
+
+
+
+
+
+
+
+class InformacoesPessoais:
+    def __init__(self, nome, contacto, endereco):
+        self.nome = nome
+        self.contacto = contacto
+        self.endereco = endereco
+       
+        
+
+
+    def exibir_informacoes(self):
+        print(f"Nome: {self.nome}")
+        print(f"Contacto: {self.contacto}")
+        print(f"Endereço: {self.endereco}")
+        self.endereço_certo=20
+    def get_endereço(self):
+      return self.endereço 
+
+class ExperienciaProfissional:
+    def __init__(self, cargo, empresa, periodo):
+        self.cargo = cargo
+        self.empresa = empresa
+        self.periodo = periodo
+
+        self.cargo=20
+    def get_endereço(self):
+      return self.cargo  
+    
+    def exibir_experiencia(self):
+        print(f"Cargo: {self.cargo}")
+        print(f"Empresa: {self.empresa}")
+        print(f"Período: {self.periodo}")
+
+class Educacao:
+    def __init__(self, curso, instituicao, ano_conclusao):
+        self.curso = curso
+        self.instituicao = instituicao
+        self.ano_conclusao = ano_conclusao
+
+        self.curso=20
+    def get_curso(self):
+      return self.curso  
+
+    def exibir_educacao(self):
+        print(f"Curso: {self.curso}")
+        print(f"Instituição: {self.instituicao}")
+        print(f"Ano de Conclusão: {self.ano_conclusao}")
+
+       
