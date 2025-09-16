@@ -1,0 +1,47 @@
+import random
+
+
+
+class jogodetabuleiro:
+    
+    def __init__(self, chances=10):
+        self.chances=chances
+        
+        numero_aleatorio = random.randint(1,101)
+        
+       
+                
+        
+        
+        chute = input('chute numero entre 0 a 100  ') 
+        
+        if chute. isnumeric():
+            chute = int(chute)
+            self.chances = self.chances - 1
+            
+            if chute == numero_aleatorio:
+                print('')
+                print('Parabéns, você venceu! O número era {} e você ainda tinha {} chances.'.format(numero_aleatorio, self.chances))
+                print('')
+
+                
+            else:
+                
+                if chute> numero_aleatorio:
+                    print(numero_aleatorio)
+                    print('voce errou!! dica  e numero menor')
+                else:
+                    print(' voce errou !! e numero maior')
+                    print('voce ainda possui {} chances.'.format(self.chances))
+                    print('')
+                    
+                    if self.chances ==0:
+                        print('')
+                        print('suas chances acabaram, voce perdeu!')
+                        print('')
+                        
+                        print('fim de jogo')
+                        
+                
+jogo = jogodetabuleiro(chances=10)
+jogo.__init__()
